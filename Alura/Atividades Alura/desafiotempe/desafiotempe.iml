@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/../Atividades Alura/desafiotempe/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../Atividades Alura/desafiotempe/src" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../Atividades Alura/desafiotempe/out" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
