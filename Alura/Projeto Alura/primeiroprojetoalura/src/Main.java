@@ -13,5 +13,21 @@ public class Main {
 
         double notaDoFilme = 8.1;
 
+        double media = (9.8 + 6.3 + 8.0)/3;
+
+        System.out.println(media);
+
+        String sinopse;
+
+        sinopse= "Filme de Aventura com galâ dos anos 80";
+
+        System.out.println(sinopse);
+
+        int classificacao;
+
+        classificacao = (int) (media / 2);
+
+        System.out.println(classificacao);
+
     }
 }

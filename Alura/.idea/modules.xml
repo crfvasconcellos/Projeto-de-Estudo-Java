@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Alura.iml" filepath="$PROJECT_DIR$/Alura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Atividades Alura/desafiotemp/desafiotemp.iml" filepath="$PROJECT_DIR$/Atividades Alura/desafiotemp/desafiotemp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Atividades Alura/desafiotempe/desafiotempe.iml" filepath="$PROJECT_DIR$/Atividades Alura/desafiotempe/desafiotempe.iml" />
+    </modules>
+  </component>
+</project>
