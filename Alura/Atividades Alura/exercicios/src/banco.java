@@ -47,6 +47,12 @@ public class banco {
                 case 3:
                     System.out.println("Qual Valor deseja Transferir:");
                     double transferencia = leitor.nextDouble();
+                    if (transferencia>saldo){
+                        System.out.println("O valor é maior que o saldo, a " +
+                                "transferência é inválida! \n Tente " +
+                                "Novamente!");
+                        break;
+                    }
                     saldo = saldo -transferencia;
                     System.out.println("Valor Transferido com Sucesso!\n " + "Agora " + "Seu saldo é de "+saldo);
                     break;
