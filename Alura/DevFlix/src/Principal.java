@@ -11,17 +11,16 @@ public class Principal {
         meuFilme.exibirFicha();
 
         System.out.println("Qual nota você daria?");
-        double nota = leitor.nextDouble();
-        meuFilme.avalia(nota);
         meuFilme.avalia(5);
         meuFilme.avalia(10);
         meuFilme.avalia(8);
         meuFilme.avalia(2);
 
-        System.out.println(meuFilme.avaliacoes);
-        System.out.println(meuFilme.totalDeAvaliacao);
+        System.out.println("Total de avaliações: "+ meuFilme.getTotalDeAvaliacao());
 
         System.out.println("A média das avaliações é "+ meuFilme.obtemMedia());
+
+        
 
     }
 }
