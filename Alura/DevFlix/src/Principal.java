@@ -6,9 +6,9 @@ public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
         Scanner leitor = new Scanner(System.in);
-        meuFilme.nome = "O poderoso chefão";
-        meuFilme.anoDeLancamento = 1970;
-        meuFilme.duracao= 180;
+        meuFilme.setNome("O poderoso chefão");
+        meuFilme.setAnoDeLancamento(1970);
+        meuFilme.setDuracao(180);
 
         meuFilme.exibirFicha();
 

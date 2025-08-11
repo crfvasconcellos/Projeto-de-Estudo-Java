@@ -1,16 +1,32 @@
 package dev.claudio.devflix.models;
 
 public class Filme {
-    String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double avaliacoes;
     private int totalDeAvaliacao;
-    int duracao;
+    private int duracao;
 
 
     public int getTotalDeAvaliacao(){
         return  totalDeAvaliacao;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
     }
 
     public void exibirFicha(){
