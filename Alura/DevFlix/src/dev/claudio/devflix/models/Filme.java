@@ -1,3 +1,5 @@
+package dev.claudio.devflix.models;
+
 public class Filme {
     String nome;
     int anoDeLancamento;
@@ -7,22 +9,22 @@ public class Filme {
     int duracao;
 
 
-    int getTotalDeAvaliacao(){
+    public int getTotalDeAvaliacao(){
         return  totalDeAvaliacao;
     }
 
-    void exibirFicha(){
-        System.out.println("Nome do Filme: "+nome);
+    public void exibirFicha(){
+        System.out.println("Nome do dev.claudio.devflix.models.Filme: "+nome);
         System.out.println("Ano de Lançamento: "+anoDeLancamento);
         System.out.println("Duração: "+duracao+" min");
     }
 
-    void avalia(double nota){
+    public void avalia(double nota){
         avaliacoes = avaliacoes + nota;
         totalDeAvaliacao++;
     }
 
-    double obtemMedia(){
+    public double obtemMedia(){
         return avaliacoes/totalDeAvaliacao;
     }
 

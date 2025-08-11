@@ -1,3 +1,5 @@
+import dev.claudio.devflix.models.Filme;
+
 import java.util.Scanner;
 
 public class Principal {
@@ -20,7 +22,7 @@ public class Principal {
 
         System.out.println("A média das avaliações é "+ meuFilme.obtemMedia());
 
-        
+
 
     }
 }
