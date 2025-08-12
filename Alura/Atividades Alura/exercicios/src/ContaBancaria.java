@@ -11,6 +11,7 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
+    public double getSaldo() {
         return saldo;
     }
 
