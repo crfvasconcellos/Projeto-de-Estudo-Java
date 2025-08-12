@@ -1,4 +1,5 @@
 import dev.claudio.devflix.models.Filme;
+import dev.claudio.devflix.models.Serie;
 
 import java.util.Scanner;
 
@@ -18,11 +19,20 @@ public class Principal {
         meuFilme.avalia(8);
         meuFilme.avalia(2);
 
-        System.out.println("Total de avaliações: "+ meuFilme.getTotalDeAvaliacao());
+        Serie minhaSerie = new Serie();
 
-        System.out.println("A média das avaliações é "+ meuFilme.obtemMedia());
+        minhaSerie.setNome("Gossip Girl");
+        minhaSerie.setAnoDeLancamento(2007);
+        minhaSerie.setTemporadas(6);
+        minhaSerie.setMinutosPorEpisodio(40);
+        minhaSerie.setEpsPorTemporada(24);
 
 
+
+
+
+        minhaSerie.exibirFicha();
+        
 
     }
 }
