@@ -1,3 +1,4 @@
+import dev.claudio.devflix.calculo.CalculadoraDeTempoJava;
 import dev.claudio.devflix.models.Filme;
 import dev.claudio.devflix.models.Serie;
 
@@ -5,34 +6,39 @@ import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme();
         Scanner leitor = new Scanner(System.in);
+        Filme meuFilme = new Filme();
+
         meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracao(180);
 
         meuFilme.exibirFicha();
+        Filme outroFilme = new Filme();
 
-        System.out.println("Qual nota você daria?");
-        meuFilme.avalia(5);
-        meuFilme.avalia(10);
-        meuFilme.avalia(8);
-        meuFilme.avalia(2);
-
-        Serie minhaSerie = new Serie();
-
-        minhaSerie.setNome("Gossip Girl");
-        minhaSerie.setAnoDeLancamento(2007);
-        minhaSerie.setTemporadas(6);
-        minhaSerie.setMinutosPorEpisodio(40);
-        minhaSerie.setEpsPorTemporada(24);
+        outroFilme.setNome("As Branquelas");
+        outroFilme.setAnoDeLancamento(2005);
+        outroFilme.setDuracao(140);
 
 
+        CalculadoraDeTempoJava calculadora = new CalculadoraDeTempoJava();
 
 
+        Serie gossipGirl = new Serie();
 
-        minhaSerie.exibirFicha();
-        
+        gossipGirl.setNome("Gossip Girl");
+        gossipGirl.setTemporadas(6);
+        gossipGirl.setMinutosPorEpisodio(40);
+        gossipGirl.setEpsPorTemporada(24);
+
+
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(gossipGirl);
+
+        System.out.println(calculadora.getTempototal());
+
+
 
     }
 }
