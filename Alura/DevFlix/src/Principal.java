@@ -1,4 +1,6 @@
 import dev.claudio.devflix.calculo.CalculadoraDeTempoJava;
+import dev.claudio.devflix.calculo.FiltroDeRecomendacao;
+import dev.claudio.devflix.models.Episodio;
 import dev.claudio.devflix.models.Filme;
 import dev.claudio.devflix.models.Serie;
 
@@ -12,6 +14,7 @@ public class Principal {
         meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracao(180);
+
 
         meuFilme.exibirFicha();
         Filme outroFilme = new Filme();
@@ -31,12 +34,22 @@ public class Principal {
         gossipGirl.setMinutosPorEpisodio(40);
         gossipGirl.setEpsPorTemporada(24);
 
+        Episodio episodio = new Episodio();
+
+        episodio.setNumero(1);
+        episodio.setSerie(gossipGirl);
+        episodio.setTotalAvaliacoes(2);
+
+
 
         calculadora.inclui(outroFilme);
         calculadora.inclui(meuFilme);
         calculadora.inclui(gossipGirl);
 
         System.out.println(calculadora.getTempototal());
+
+        FiltroDeRecomendacao filtro = new FiltroDeRecomendacao();
+        filtro.filtra(episodio);
 
 
 
