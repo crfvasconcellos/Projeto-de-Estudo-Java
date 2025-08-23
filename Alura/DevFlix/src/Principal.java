@@ -4,6 +4,7 @@ import dev.claudio.devflix.models.Episodio;
 import dev.claudio.devflix.models.Filme;
 import dev.claudio.devflix.models.Serie;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal {
@@ -50,6 +51,22 @@ public class Principal {
 
         FiltroDeRecomendacao filtro = new FiltroDeRecomendacao();
         filtro.filtra(episodio);
+
+
+        Filme filmeDoClaudio = new Filme();
+        filmeDoClaudio.setDuracao(200);
+        filmeDoClaudio.setNome("Dogville");
+        filmeDoClaudio.setAnoDeLancamento(2003);
+        filmeDoClaudio.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(filmeDoClaudio);
+        listaDeFilmes.add(outroFilme);
+
+        System.out.println("Tamanho da Lista: " + listaDeFilmes.size());
+        System.out.println("O primeiro filme da lista é " + listaDeFilmes.get(1).getNome());
 
 
 

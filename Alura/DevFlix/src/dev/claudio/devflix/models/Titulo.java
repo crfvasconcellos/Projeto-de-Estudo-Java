@@ -17,6 +17,10 @@ public class Titulo {
         this.nome = nome;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
         this.incluidoNoPlano = incluidoNoPlano;
     }
