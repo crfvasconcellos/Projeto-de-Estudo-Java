@@ -3,7 +3,7 @@ package dev.claudio.devflix.models;
 import dev.claudio.devflix.calculo.Classificavel;
 
 public class Filme extends Titulo implements Classificavel {
-   private String diretor;
+    private String diretor;
 
     public String getDiretor() {
         return diretor;
@@ -17,4 +17,11 @@ public class Filme extends Titulo implements Classificavel {
     public int getClassificacao() {
         return (int) obtemMedia() / 2;
     }
+
+    @Override
+    public String toString() {
+        return "Filme: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
+    }
 }
+
+

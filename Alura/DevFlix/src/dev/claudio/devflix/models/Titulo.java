@@ -29,6 +29,10 @@ public class Titulo {
         this.anoDeLancamento = anoDeLancamento;
     }
 
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
     public void setDuracao(int duracao) {
         this.Duracao = duracao;
     }
