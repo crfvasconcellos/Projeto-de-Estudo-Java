@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Beecrowd.iml" filepath="$PROJECT_DIR$/Beecrowd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuscaNaInternet/BuscaNaInternet.iml" filepath="$PROJECT_DIR$/BuscaNaInternet/BuscaNaInternet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Distancia/Distancia.iml" filepath="$PROJECT_DIR$/Distancia/Distancia.iml" />
     </modules>
   </component>
 </project>
