@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Alura/DevFlix/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Alura/Atividades Alura/desafiosMusicas/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UFT/POO/Exercicios" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Beecrowd/salario" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

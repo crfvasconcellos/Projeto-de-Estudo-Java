@@ -17,7 +17,7 @@ public class Principal {
 
         meuFilme.exibirFicha();
         Filme outroFilme = new Filme("As Branquelas");
-        
+
         outroFilme.setAnoDeLancamento(2005);
         outroFilme.setDuracao(140);
 
