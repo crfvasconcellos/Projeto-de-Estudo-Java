@@ -10,17 +10,14 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        Filme meuFilme = new Filme();
-
-        meuFilme.setNome("O poderoso chefão");
+        Filme meuFilme = new Filme("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracao(180);
 
 
         meuFilme.exibirFicha();
-        Filme outroFilme = new Filme();
-
-        outroFilme.setNome("As Branquelas");
+        Filme outroFilme = new Filme("As Branquelas");
+        
         outroFilme.setAnoDeLancamento(2005);
         outroFilme.setDuracao(140);
 
@@ -53,9 +50,8 @@ public class Principal {
         filtro.filtra(episodio);
 
 
-        Filme filmeDoClaudio = new Filme();
+        Filme filmeDoClaudio = new Filme("Dogville");
         filmeDoClaudio.setDuracao(200);
-        filmeDoClaudio.setNome("Dogville");
         filmeDoClaudio.setAnoDeLancamento(2003);
         filmeDoClaudio.avalia(10);
 
@@ -67,7 +63,7 @@ public class Principal {
 
         System.out.println("Tamanho da Lista: " + listaDeFilmes.size());
         System.out.println("O primeiro filme da lista é " + listaDeFilmes.get(1).getNome());
-        System.out.println("To STring do Filme: " + listaDeFilmes.get(1).toString());
+        System.out.println("To STring do Filme: " + listaDeFilmes);
 
 
 
