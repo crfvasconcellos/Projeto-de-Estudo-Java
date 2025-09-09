@@ -10,24 +10,21 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        Filme meuFilme = new Filme("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        Filme meuFilme = new Filme(1970,"O poderoso chefão");
         meuFilme.setDuracao(180);
 
 
         meuFilme.exibirFicha();
-        Filme outroFilme = new Filme("As Branquelas");
+        Filme outroFilme = new Filme(2005,"As Branquelas");
 
-        outroFilme.setAnoDeLancamento(2005);
         outroFilme.setDuracao(140);
 
 
         CalculadoraDeTempoJava calculadora = new CalculadoraDeTempoJava();
 
 
-        Serie gossipGirl = new Serie();
+        Serie gossipGirl = new Serie(2002,"Gossip Girl");
 
-        gossipGirl.setNome("Gossip Girl");
         gossipGirl.setTemporadas(6);
         gossipGirl.setMinutosPorEpisodio(40);
         gossipGirl.setEpsPorTemporada(24);
@@ -50,9 +47,8 @@ public class Principal {
         filtro.filtra(episodio);
 
 
-        Filme filmeDoClaudio = new Filme("Dogville");
+        Filme filmeDoClaudio = new Filme(2003,"Dogville");
         filmeDoClaudio.setDuracao(200);
-        filmeDoClaudio.setAnoDeLancamento(2003);
         filmeDoClaudio.avalia(10);
 
         ArrayList<Filme> listaDeFilmes = new ArrayList<>();
