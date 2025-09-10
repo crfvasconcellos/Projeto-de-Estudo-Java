@@ -16,19 +16,27 @@ public class OlaMundoSwing {
         JLabel texto = new JLabel();
         texto.setBounds(170,180,100,100);
 
+
+
+        JTextField caixa = new JTextField("Insira seu nome",20);
+
+
+        caixa.setBounds(100,100,200,50);
+
         //Configurando o Botao
 
         botao.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                texto.setText("Olá Mundo!");
+                texto.setText("Olá " + caixa.getText());
+                System.out.println("Olá Mundo!!!!!");
             }
         });
 
         //Add
         janela.add(texto);
         janela.add(botao);
-
+        janela.add(caixa);
 
         //Deixou visivel
         janela.setVisible(true);
