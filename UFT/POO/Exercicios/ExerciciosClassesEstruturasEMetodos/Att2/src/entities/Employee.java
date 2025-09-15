@@ -1,4 +1,4 @@
-package ExerciciosClassesEstruturasEMetodos.Att2;
+package ExerciciosClassesEstruturasEMetodos.Att2.src.entities;
 
 public class Employee {
     public String name;
