@@ -1,4 +1,4 @@
-package ExerciciosClassesEstruturasEMetodos.Att1;
+package ExerciciosClassesEstruturasEMetodos.Att1.src.entities;
 
 public class Rectangle {
     public double width;
