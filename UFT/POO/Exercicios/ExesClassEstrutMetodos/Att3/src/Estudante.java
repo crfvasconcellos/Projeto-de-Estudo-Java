@@ -1,4 +1,4 @@
-package ExerciciosClassesEstruturasEMetodos.Att3.src;
+package ExesClassEstrutMetodos.Att3.src;
 
 public class Estudante {
     public String nome;

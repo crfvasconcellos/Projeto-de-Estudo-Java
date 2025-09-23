@@ -1,4 +1,4 @@
-package ExerciciosClassesEstruturasEMetodos.Att3.src;
+package ExesClassEstrutMetodos.Att3.src;
 
 import java.util.Locale;
 import java.util.Scanner;

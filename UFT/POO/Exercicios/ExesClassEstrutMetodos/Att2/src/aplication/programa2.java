@@ -1,6 +1,6 @@
-package ExerciciosClassesEstruturasEMetodos.Att2.src.aplication;
+package ExesClassEstrutMetodos.Att2.src.aplication;
 
-import ExerciciosClassesEstruturasEMetodos.Att2.src.entities.Employee;
+import ExesClassEstrutMetodos.Att2.src.entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;

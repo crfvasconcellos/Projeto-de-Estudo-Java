@@ -1,6 +1,6 @@
-package ExerciciosClassesEstruturasEMetodos.Att1.src.aplication;
+package ExesClassEstrutMetodos.Att1.src.aplication;
 
-import ExerciciosClassesEstruturasEMetodos.Att1.src.entities.Rectangle;
+import ExesClassEstrutMetodos.Att1.src.entities.Rectangle;
 
 import java.util.Locale;
 import java.util.Scanner;
