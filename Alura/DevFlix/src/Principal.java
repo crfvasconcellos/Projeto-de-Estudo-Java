@@ -58,7 +58,7 @@ public class Principal {
         listaDeFilmes.add(outroFilme);
 
         System.out.println("Tamanho da Lista: " + listaDeFilmes.size());
-        System.out.println("O primeiro filme da lista é " + listaDeFilmes.get(1).getNome());
+        System.out.println("O primeiro filme da lista é " + listaDeFilmes.get(0).getNome());
         System.out.println("To STring do Filme: " + listaDeFilmes);
 
 
