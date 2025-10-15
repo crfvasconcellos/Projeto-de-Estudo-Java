@@ -1,3 +1,5 @@
+package dev.claudio.devflix.principal;
+
 import dev.claudio.devflix.calculo.CalculadoraDeTempoJava;
 import dev.claudio.devflix.calculo.FiltroDeRecomendacao;
 import dev.claudio.devflix.models.Episodio;
