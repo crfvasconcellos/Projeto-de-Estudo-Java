@@ -1,6 +1,6 @@
 package dev.claudio.devflix.models;
 
-public class Titulo {
+public class Titulo implements Comparable <Titulo>{
     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
@@ -59,5 +59,10 @@ public class Titulo {
 
     public int getDuracao() {
         return Duracao;
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 }

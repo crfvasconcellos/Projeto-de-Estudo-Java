@@ -5,6 +5,9 @@ import dev.claudio.devflix.models.Serie;
 import dev.claudio.devflix.models.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -12,9 +15,9 @@ public class PrincipalComListas {
         Filme meuFilme = new Filme(1970,"O poderoso chefão");
         meuFilme.avalia(9);
         Filme outroFilme = new Filme(2005,"As Branquelas");
-        meuFilme.avalia(10);
+        outroFilme.avalia(10);
         Filme filmeDoClaudio = new Filme(2003,"Dogville");
-        meuFilme.avalia(9);
+        filmeDoClaudio.avalia(9);
 
         Serie gossipGirl = new Serie(2002,"Gossip Girl");
 
@@ -33,6 +36,27 @@ public class PrincipalComListas {
                 System.out.println(filme.getClassificacao());
             }
         }
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Lil nas X");
+        buscaPorArtista.add("Anitta");
+        buscaPorArtista.add("Chico Buarque");
+
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+
+        System.out.println(buscaPorArtista);
+
+        System.out.println(lista);
+
+        Collections.sort(lista);
+
+        System.out.println(lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println(lista);
 
 
     }
