@@ -30,15 +30,8 @@ public class Item implements Comparable<Item>{
 
     @Override
     public int compareTo(Item o) {
-        if (o.getValor()> this.valor){
 
-            return 1;
+        return Double.valueOf(this.valor).compareTo(Double.valueOf(o.getValor()));
 
-        } else if (this.valor>o.getValor()) {
-            return -1;
-        }
-        else {
-            return 0;
-        }
     }
 }
