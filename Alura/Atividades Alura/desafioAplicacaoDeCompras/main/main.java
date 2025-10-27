@@ -2,6 +2,7 @@ package main;
 import objects.Mercado;
 
 
+import java.util.Collections;
 import java.util.Scanner;
 
 public class main {
@@ -42,6 +43,8 @@ public class main {
 
         System.out.println("\n****************");
         System.out.println("COMPRAS RELIZADAS: ");
+
+        Collections.sort(mercado.getComprados());
 
         for (int i = 0; i < mercado.getQtdItens(); i++) {
             mercado.getItemDeComprados(i);
