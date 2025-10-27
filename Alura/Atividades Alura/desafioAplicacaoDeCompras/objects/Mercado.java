@@ -1,9 +1,16 @@
+package objects;
+
 import java.util.ArrayList;
 
 public class Mercado {
 
     private double saldo;
     private ArrayList<Item> comprados = new ArrayList<>();
+    private int qtdItens = 0;
+
+    public int getQtdItens() {
+        return qtdItens;
+    }
 
     public double getSaldo() {
         return saldo;
@@ -44,9 +51,16 @@ public class Mercado {
 
             Item itemNovo = new Item(nome,valor);
             comprados.add(itemNovo);
+            qtdItens++;
 
             return foi;
         }
+
+    }
+
+    public void getItemDeComprados(int i){
+
+        System.out.printf("\n%s - R$%.2f \n",comprados.get(i).getNome(), comprados.get(i).getValor());
 
     }
 
