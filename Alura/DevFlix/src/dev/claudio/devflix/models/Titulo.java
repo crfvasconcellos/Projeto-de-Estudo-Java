@@ -1,13 +1,25 @@
 package dev.claudio.devflix.models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable <Titulo>{
+
+    @SerializedName("Title")
     private String nome;
+    @SerializedName("Year")
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
     private double avaliacoes;
     private int totalDeAvaliacao;
     private int Duracao;
 
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "nome='" + nome + '\'' +
+                ", anoDeLancamento=" + anoDeLancamento +
+                '}';
+    }
 
     public Titulo(int anoDeLancamento, String nome) {
         this.anoDeLancamento = anoDeLancamento;

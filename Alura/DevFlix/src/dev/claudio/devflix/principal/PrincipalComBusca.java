@@ -1,5 +1,8 @@
 package dev.claudio.devflix.principal;
 
+import com.google.gson.Gson;
+import dev.claudio.devflix.models.Titulo;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -29,6 +32,11 @@ public class PrincipalComBusca {
 
 
         System.out.println(response.body());
+
+        Gson gson = new Gson();
+        Titulo meuTitulo = gson.fromJson(response.body(),Titulo.class);
+        System.out.println("Filme: " + meuTitulo.getNome());
+        System.out.println(meuTitulo);
 
 
     }
