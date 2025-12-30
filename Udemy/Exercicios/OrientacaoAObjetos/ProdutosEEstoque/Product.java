@@ -7,7 +7,14 @@ public class Product {
     public double preco;
     public int qtd;
 
+    public Product() {
+    }
 
+    public Product(String name, double preco, int qtd) {
+        this.name = name;
+        this.preco = preco;
+        this.qtd = qtd;
+    }
 
     public void addProducts(){
         Locale.setDefault(Locale.US);
