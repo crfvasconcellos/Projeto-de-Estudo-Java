@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Product {
 
-    public String name;
-    public double preco;
-    public int qtd;
+    private String name;
+    private double preco;
+    private int qtd;
 
     public Product() {
     }
