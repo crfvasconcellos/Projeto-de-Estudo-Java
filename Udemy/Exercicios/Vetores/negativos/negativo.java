@@ -10,7 +10,7 @@ public class negativo {
         System.out.println("Quantos numeros deseja-se digitar? ");
         int qtd = sc.nextInt();
 
-        int [] negativos = new int[10];
+        int [] negativos = new int[qtd];
         int qtdn = 0;
         for (int i = 0; i < qtd; i++) {
 
