@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Tratando Exceções/Teste" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exercicios/OrientacaoAObjetos/ComOrientacao" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exercicios/OrientacaoAObjetos/SemOrientacao" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exercicios" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
