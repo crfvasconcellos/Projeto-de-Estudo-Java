@@ -1,3 +1,5 @@
+package OrientacaoAObjetos.MembrosEstaticos;
+
 public class Circulo {
 
     public static final double PI = 3.14;
