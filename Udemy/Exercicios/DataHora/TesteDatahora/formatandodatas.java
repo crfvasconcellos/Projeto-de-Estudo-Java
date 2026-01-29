@@ -23,7 +23,11 @@ public class formatandodatas {
         System.out.println("d2 formatado2 = " + d2.format(fmt2));
         System.out.println("Instant formatado3 = " + fmt3.format(i1));
 
+        // Convertendo Instant em data local
 
+        LocalDateTime r1 = LocalDateTime.ofInstant(i1,ZoneId.of("Asia/Hong_Kong"));
+
+        System.out.println("i1 formatado1 = " + r1.format(fmt2));
 
     }
 }
