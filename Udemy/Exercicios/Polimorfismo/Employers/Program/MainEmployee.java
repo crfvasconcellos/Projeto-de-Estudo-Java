@@ -1,7 +1,7 @@
-package Polimorfismo.Program;
+package Polimorfismo.Employers.Program;
 
-import Polimorfismo.Entities.Employee;
-import Polimorfismo.Entities.OutsourceEmployee;
+import Polimorfismo.Employers.Entities.Employee;
+import Polimorfismo.Employers.Entities.OutsourceEmployee;
 
 import java.util.Locale;
 import java.util.Scanner;

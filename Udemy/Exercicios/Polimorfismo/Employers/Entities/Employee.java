@@ -1,4 +1,4 @@
-package Polimorfismo.Entities;
+package Polimorfismo.Employers.Entities;
 
 public class Employee {
     protected String name;
