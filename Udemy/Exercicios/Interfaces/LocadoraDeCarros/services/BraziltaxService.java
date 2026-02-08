@@ -1,6 +1,6 @@
 package Interfaces.LocadoraDeCarros.services;
 
-public class BraziltaxService {
+public class BraziltaxService implements TaxService {
 
     public double tax(double amount){
         if (amount <= 100){
