@@ -11,13 +11,13 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        PrintService ps = new PrintService();
+        PrintService<String> ps = new PrintService<>();
 
         System.out.println("How many values? ");
         int qtd = sc.nextInt();
 
         for (int i = 0; i < qtd; i++) {
-            int value = sc.nextInt();
+            String value = sc.next();
             ps.addValue(value);
         }
 
