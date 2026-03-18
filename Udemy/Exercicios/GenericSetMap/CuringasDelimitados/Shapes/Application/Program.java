@@ -1,8 +1,8 @@
-package GenericSetMap.CuringasDelimitados.Application;
+package GenericSetMap.CuringasDelimitados.Shapes.Application;
 
-import GenericSetMap.CuringasDelimitados.Entities.Circle;
-import GenericSetMap.CuringasDelimitados.Entities.Rectangle;
-import GenericSetMap.CuringasDelimitados.Interfaces.Shape;
+import GenericSetMap.CuringasDelimitados.Shapes.Entities.Circle;
+import GenericSetMap.CuringasDelimitados.Shapes.Entities.Rectangle;
+import GenericSetMap.CuringasDelimitados.Shapes.Interfaces.Shape;
 
 import java.util.ArrayList;
 import java.util.List;

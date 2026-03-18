@@ -1,6 +1,6 @@
-package GenericSetMap.CuringasDelimitados.Entities;
+package GenericSetMap.CuringasDelimitados.Shapes.Entities;
 
-import GenericSetMap.CuringasDelimitados.Interfaces.Shape;
+import GenericSetMap.CuringasDelimitados.Shapes.Interfaces.Shape;
 
 public class Circle implements Shape {
 
