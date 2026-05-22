@@ -12,10 +12,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
+
         List<Product> produtos = new ArrayList<>();
 
         try{
-            FileReader fr = new FileReader("products.csv");
+            FileReader fr = new FileReader("Exercicios/Stream/MediaProdutos/Data/products.csv");
             BufferedReader br = new BufferedReader(fr);
 
             String linha;
@@ -23,7 +24,7 @@ public class Main {
             while ((linha = br.readLine()) != null){
 
                 String[] vect = linha.split(",");
-                produtos.add(new Product(vect[0],Integer.parseInt(vect[1])));
+                produtos.add(new Product(vect[0], Double.parseDouble(vect[1])));
 
             }
 
