@@ -50,6 +50,13 @@ public class Main {
         media = media / produtos.stream().count();
         System.out.println("Media: " + media);
 
+        double finalMedia = media;
+        List<Product> menores = produtos.stream().filter(p -> p.getPrice() < finalMedia).sorted((x,y) -> Double.compare(x.getPrice(),y.getPrice())).toList();
+
+        for (Product p : menores){
+            System.out.println(p.getName());
+        }
+
 
     }
 }
