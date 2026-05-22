@@ -7,7 +7,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,23 +40,21 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        double media = 0;
-
-        for (Product p : produtos){
-
-            media = media + p.getPrice();
+        double media = produtos.stream().map(p -> p.getPrice()).reduce(0.0,(x,y) -> x + y) / produtos.size();
 
 
-        }
+        System.out.println("Media: " + String.format("%.2f",media));
 
-        media = media / produtos.stream().count();
-        System.out.println("Media: " + media);
+        Comparator<String> comp = (s1,s2) -> s1.toUpperCase().compareTo(s2.toUpperCase());
 
-        double finalMedia = media;
-        List<Product> menores = produtos.stream().filter(p -> p.getPrice() < finalMedia).sorted((x,y) -> Double.compare(x.getPrice(),y.getPrice())).toList();
+        List<String> menores = produtos.stream()
+                .filter(p -> p.getPrice() < media)
+                .map(p -> p.getName())
+                .sorted(comp.reversed()).collect(Collectors.toList());
 
-        for (Product p : menores){
-            System.out.println(p.getName());
+
+        for (String p : menores){
+            System.out.println(p);
         }
 
 
