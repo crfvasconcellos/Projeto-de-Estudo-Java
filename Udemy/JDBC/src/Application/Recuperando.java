@@ -1,14 +1,13 @@
 package Application;
 
 import db.DB;
-import db.DbException;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Program {
+public class Recuperando {
     static void main() {
 
         Connection conn = null;
