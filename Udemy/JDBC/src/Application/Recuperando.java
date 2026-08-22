@@ -20,7 +20,7 @@ public class Recuperando {
             rs = st.executeQuery("select * from seller");
 
             while (rs.next()){
-                System.out.println(rs.getInt("Id") + "," + rs.getString("Name"));
+                System.out.println(rs.getInt("Id") + "," + rs.getString("Name") + "," + rs.getDouble("BaseSalary"));
             }
 
         } catch (SQLException e) {
